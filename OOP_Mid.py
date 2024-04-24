@@ -27,7 +27,7 @@ class Hall:
         self.seats[show_id] = [['O' for _ in range(self.cols)] for _ in range(self.rows)] 
 
     def book_seats(self, show_id, seats_to_book):
-        if show_id not in self._seats:
+        if show_id not in self.seats:
             print("Invalid show ID")
             return
 
